@@ -67,6 +67,17 @@ Please follow the following instructions to put your stick in BSL mode:
 
 <ins>It is imperative that you press and hold the BSL pushbutton **before** plugging it in to the host and release it **after a few seconds**. If you don't follow this, your stick will not enter BSL mode and flashing will fail.</ins>
 
+## Determine the USB port
+
+The upcoming Python commands need a port parameter to be provided.
+
+### Windows
+
+See the [Drivers](drivers.md#windows) article.
+
+### macOS
+
+Find the device using `ls /dev/tty.*` and check which match makes sense most. Double-check by undocking the device again, reissue the command and check if the right one lacks now.
 
 ## Flash firmware
 
@@ -74,7 +85,7 @@ To flash firmware, run:
 
 `python3 cc2538-bsl.py -p PORT -evw FIRMWARE`
 
-...where `PORT` is the serial port your board is connected to and `FIRMWARE` is the hex file you want to flash (see [here](/radio-docs/#step-2-download-the-correct-firmware-for-your-stick) for help on choosing firmware).
+...where `PORT` is the serial port your board is connected to (see [above](#determine-the-usb-port)) and `FIRMWARE` is the hex file you want to flash (see [here](/radio-docs/#step-2-download-the-correct-firmware-for-your-stick) for help on choosing firmware).
 
 <p class="warn">⚠️ <b>WARNING:</b> It is crucial that you download the correct firmware for your stick as using the wrong firmware will disable the BSL and you will need an external debugger / programmer to flash your stick again. Instructions for that can be found <a href="/radio-docs/advanced/flash-jtag/">here</a>.</p>
 

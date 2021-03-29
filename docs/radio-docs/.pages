@@ -7,5 +7,5 @@ nav:
     - rpi-initial-setup.md
     - zigbee2mqtt.md
     - zha-home-assistant.md
-    - troubleshooting.md
+    - Troubleshooting and FAQ: troubleshooting.md
     - Advanced Topics: advanced

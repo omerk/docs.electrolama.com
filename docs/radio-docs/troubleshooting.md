@@ -75,6 +75,12 @@ zzh is sold as a general purpose development board and while we can offer suppor
 For specific device instructions, we find the [zigbee2mqtt Supported Devices](https://www.zigbee2mqtt.io/information/supported_devices.html) page quite useful. If instructions there don't fix your problem, we suggest raising an issue on relevant forums/issue trackers for the particular software you are using.
 
 
+## Is there a guarantee that your stick will improve my network over other coordinators?
+
+The performance and more importantly, the range of your Zigbee network depend very heavily on the environment that you are operating in. External factors such as wireless interference from devices and networks around you and even the materials your walls are made out of will have impact on your network. It is therefore impossible to make any guarantees.
+
+Having said all that, [reviews from existing customers](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/#product-reviews) comparing zzh to other or older generation coordinators are quite favourable. We suggest giving them a read if you're not sure whether zzh is right for you or not.
+
 
 ## cc2538-bsl.py Issues
 

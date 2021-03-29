@@ -1,4 +1,9 @@
-# Troubleshooting
+# Troubleshooting and FAQ
+
+## I don't know where to start
+
+The [Quick Start](http://127.0.0.1:8000/radio-docs/) should give you a step by step overview of what is required to set up your stick with the common Home Automation use case.
+
 
 ## The LED on my stick is blinking continously
 
@@ -12,6 +17,14 @@ To check if the [coordinator firmware](/radio-docs/#step-2-download-the-correct-
 If you get the `ModuleNotFoundError: No module named 'serial'` error message, install pyserial: `sudo pip3 install pyserial`
 
 This script sends a ZNP command and checks that you get the expected response back. A `PASS` result means that you've sucessfully flashed your stick with the coordinator firmware. A `FAIL` result could either mean you have not flashed your stick properly, or you might not have specified the correct serial port (especially if you have multiple devices connected to you computer).
+
+
+## What USB port/extension cable should I be using?
+
+Your USB RF stick consumes a miniscule amount of power (in the order of a few milliamps) and communication speed is fairly slow too so it can be plugged into any USB2 or USB3 port. However, it is always a good idea to try and separate USB devices as far away from each other to minimise potential issues caused by electrical noise.
+
+If you're having issues due to electrical noise, moving your stick away from the host (and other devices) might be a good idea. This will only work if you are using a good quality, **shielded** USB extension lead. USB extension leads sold as USB 3.0 compatible and a little thicker than standard USB cables are generally of the shielded variety. You can use a USB3 extension lead even if you will plug it into a USB2 port.
+
 
 ## Why does my USB RF stick keep disconnecting and connecting again?
 
@@ -50,11 +63,25 @@ In all of the few reported cases (with zzh), a Raspberry Pi with an external SSD
 Please note that this is not a zzh specific issue, a [quick Google search](https://www.google.com/search?q=raspberry+pi+usb+disconnect+ssd) will lead to many forum threads/blog posts discussing the same issue and recommendations.
 
 
+## Can I use Zigbee and Bluetooth on zzh at the same time?
+
+While the chip used on zzh is a multiprotocol device (CC2652R), the standard ZNP coordinator firmware only makes use of Zigbee. We are not aware of any firmware development that utilises both Zigbee and Bluetooth. If you're interested in developing Bluetooth applications with zzh you might find the [official SDK from TI helpful](https://www.ti.com/tool/SIMPLELINK-CC13X2-26X2-SDK)
+
+
+## I can get everything but "Device X" working, how do I fix that?
+
+zzh is sold as a general purpose development board and while we can offer support to get you up and running with flashing firmware and communicating with your stick, we can not help you with specific software or device queries.
+
+For specific device instructions, we find the [zigbee2mqtt Supported Devices](https://www.zigbee2mqtt.io/information/supported_devices.html) page quite useful. If instructions there don't fix your problem, we suggest raising an issue on relevant forums/issue trackers for the particular software you are using.
+
+
+
 ## cc2538-bsl.py Issues
 
 **"ERROR: Timeout waiting for ACK / NACK after ‘Synch (0x55 0x55)’**
 
 This error is almost always seen when the device is not put into BSL mode correctly. Please follow the [instructions here](/radio-docs/bsl/#how-to-enter-bsl-mode) and try again.
+
 
 
 ## zigbee2mqtt Issues
@@ -79,6 +106,7 @@ A checklist to go through if you get this error message:
 **Error: "Coordinator failed to start, probably the panID is already in use, try a different panID or channel"**
 
 This error can appear when migrating an existing installation of zigbee2mqtt to use zzh. Changing the Zigbee channel used or Personal Area Network Identifier (PAN ID) should be sfficient to prevent conflicts with previous configurations. This can be accomplished by editing [`configuration.yaml`](https://www.zigbee2mqtt.io/information/configuration.html), specifying a custom `channel` or `pan_id` under the `advanced` section. Valid channels are in the range 11 to 26, however channels in the Zigbee Light Link (ZLL) range are recommended; channel 11 (default), 15, 20, or 25. PAN ID can by any 16-bit value (default: `0x1a62`). Note that these changes will require re-pairing of existing devices.
+
 
 
 ## ZHA Issues

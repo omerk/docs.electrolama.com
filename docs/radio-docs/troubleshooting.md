@@ -2,7 +2,7 @@
 
 ## I don't know where to start
 
-The [Quick Start](http://127.0.0.1:8000/radio-docs/) should give you a step by step overview of what is required to set up your stick with the common Home Automation use case.
+The [Quick Start](/radio-docs/) should give you a step by step overview of what is required to set up your stick with the common Home Automation use case.
 
 
 ## The LED on my stick is blinking continously

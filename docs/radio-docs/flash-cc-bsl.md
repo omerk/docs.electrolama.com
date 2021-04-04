@@ -29,7 +29,7 @@ Install required dependencies: Open Command Prompt and check if `pip` is install
 ### macOS
 To run cc2538-bsl.py you need to install some extra python dependencies, python3 should already be shipped with macOS (Catalina onwards?).
 
-Download and extract cc2538-bsl: `wget -O cc2538-bsl.zip https://codeload.github.com/JelmerT/cc2538-bsl/zip/master && unzip cc2538-bsl.zip`
+Download and extract cc2538-bsl: `curl --output cc2538-bsl.zip https://codeload.github.com/JelmerT/cc2538-bsl/zip/master && unzip cc2538-bsl.zip`
 
 Install required dependencies: `$ /usr/bin/python3 -m pip install --user pyserial intelhex` (As we cannot write to the system's location we need to install the dependencies with in the user location. The downside is this has to be installed for every user that will use cc2538-bsl.)
 

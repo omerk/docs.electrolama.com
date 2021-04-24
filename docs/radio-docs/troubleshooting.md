@@ -65,7 +65,16 @@ Please note that this is not a zzh specific issue, a [quick Google search](https
 
 ## Can I use Zigbee and Bluetooth on zzh at the same time?
 
-While the chip used on zzh is a multiprotocol device (CC2652R), the standard ZNP coordinator firmware only makes use of Zigbee. We are not aware of any firmware development that utilises both Zigbee and Bluetooth. If you're interested in developing Bluetooth applications with zzh you might find the [official SDK from TI helpful](https://www.ti.com/tool/SIMPLELINK-CC13X2-26X2-SDK)
+While the chip used on zzh is a multiprotocol device (CC2652R), the standard ZNP coordinator firmware only makes use of Zigbee. We are not aware of any firmware development that utilises both Zigbee and Bluetooth. If you're interested in developing Bluetooth applications with zzh you might find the [official SDK from TI](https://www.ti.com/tool/SIMPLELINK-CC13X2-26X2-SDK) helpful.
+
+
+## Can I use zzh as a sniffer for Wireshark?
+
+TI does provide a packet sniffer that works with Wireshark for multiple protocols, you can download it [here](https://www.ti.com/tool/download/PACKET-SNIFFER-2). Setup and usage instructions available [here](http://software-dl.ti.com/lprf/packet_sniffer_2/docs/user_guide/html/introduction.html).
+
+Once installed, firmware for CC2652R (the chip used on zzh) is located at: `C:\Program Files (x86)\Texas Instruments\SmartRF Tools\SmartRF Packet Sniffer 2\sniffer_fw\bin\cc26x2r1lp\sniffer_fw.hex`. You can flash this firmware using either the [BSL method](/radio-docs/flash-cc-bsl/) or with an [external debugger](/radio-docs/advanced/flash-jtag/).
+
+<p class="warn">⚠️ <b>WARNING:</b> Using this sniffer firmware effectively <b>disables BSL</b> by moving the backdoor trigger pin (<a href="/radio-docs/bsl/#backdoor">explanation here</a>) and if you burn it <b>you will need an external debugger to re-program your stick</b> (instructions <a href="/radio-docs/advanced/flash-jtag">here</a>).</p>
 
 
 ## I can get everything but "Device X" working, how do I fix that?

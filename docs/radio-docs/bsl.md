@@ -43,6 +43,8 @@ The de facto (see [here](https://github.com/Koenkk/Z-Stack-firmware/issues/210))
 
 All Electrolama boards have a pushbutton on these pins, labelled "BSL".
 
+<ins>If you flash a firmware on your stick that moves this backdoor pin, this will effectively disable BSL and you will need an <a href="/radio-docs/advanced/flash-jtag">external debugger</a> to flash your stick again.</ins>
+
 
 ## Auto-BSL
 

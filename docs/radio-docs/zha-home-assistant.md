@@ -4,7 +4,7 @@ title: ZHA (Home Assistant)
 
 [Zigbee Home Automation (ZHA)](https://www.home-assistant.io/integrations/zha/) integration is a built-in component in Home Assistant for native support, this makes the initial configuration very simple as you connect to the zzh adapter directly from Home Assistant's UI.
 
-ZHA depends on the [zigpy python library (plus radio libraries for zigpy)](https://github.com/zigpy/) to support different Zigbee adapters/modules, and the radio library for TI CI chips supports the [same Z-Stack coordinator firmware as Zigbee2mqtt](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator).
+ZHA depends on the [zigpy python library (plus radio libraries for zigpy)](https://github.com/zigpy/) to support different Zigbee adapters/modules, and the radio library for TI CC chips supports the [same Z-Stack coordinator firmware as Zigbee2mqtt](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator).
 
 ## Configuration
 

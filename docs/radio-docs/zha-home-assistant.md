@@ -4,9 +4,7 @@ title: ZHA (Home Assistant)
 
 [Zigbee Home Automation (ZHA)](https://www.home-assistant.io/integrations/zha/) integration is a built-in component in Home Assistant for native support, this makes the initial configuration very simple as you connect to the zzh adapter directly from Home Assistant's UI.
 
-Note! **Support for Texas Instruments chips (especially CC2562) in Home Assistant's ZHA is still experimental as in early development!**
-
-ZHA depends on the [zigpy python library (plus radio libraries for zigpy)](https://github.com/zigpy/) to support different Zigbee adapters/modules, and the radio library for TI CI chips supports the [same Z-Stack coordinator firmware as Zigbee2mqtt](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator).
+ZHA depends on the [zigpy python library (plus radio libraries for zigpy)](https://github.com/zigpy/) to support different Zigbee adapters/modules, and the radio library for TI CC chips supports the [same Z-Stack coordinator firmware as Zigbee2mqtt](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator).
 
 ## Configuration
 
@@ -18,6 +16,6 @@ Choose the device path of zzh and wait for installation to complete. Navigate to
 
 ![ZHA Coordinator](/_assets/zzh-zha-coord.png)
 
-In case the autodetection fails, a manual setup menu will be displayed. Check the device path and set _Radio Type_ as **ti_cc**. Leave other options as they are.
+In case the autodetection fails, a manual setup menu will be displayed. Check the device path and set _Radio Type_ as **znp**. Leave other options as they are.
 
 If ZHA is unable to connect to the zzh adapter then try re-plugging in the zzh USB adapter or try moving it to another USB-port.

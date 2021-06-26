@@ -21,4 +21,4 @@ Also note that it sits in the `advanced:` config group and not in `serial:`.
 
 ## Troubleshooting
 
-[This page](/radio-docs/troubleshooting/#zigbee2mqtt) contains solutions to common problems.
+[This page](/radio-docs/troubleshooting/#zigbee2mqtt-issues) contains solutions to common problems.

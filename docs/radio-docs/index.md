@@ -26,7 +26,7 @@ There are two ways you can use your radio stick, either as a **coordinator** or 
 
 **Coordinator:** This is the firmware you need if you're going to be using your stick with zigbee2mqtt, ZHA (Home Assistant) or any other ZNP-firmware-compliant software.  
 
-You can find the coordinator firmware downloads under [`coordinator/Z-Stack_3.x.0/bin`](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin) in the [Z-Stack-firmware repository](https://github.com/Koenkk/Z-Stack-firmware). Pick the latest release available for your stick:
+You can find the coordinator firmware downloads under [`coordinator/Z-Stack_3.x.0/bin`](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin) in the [Z-Stack-firmware repository](https://github.com/Koenkk/Z-Stack-firmware). Pick the latest release available for your stick that matches the following template:
 
 | Stick | Coordinator Firmware |
 |--|--|
@@ -36,7 +36,7 @@ You can find the coordinator firmware downloads under [`coordinator/Z-Stack_3.x.
 
 **Router:** If you're looking to extend the range of your network, flash your stick with the router firmware and plug it into a power source somewhere central in your home for stand-alone operation. Refer to the [README of the router firmware](https://github.com/Koenkk/Z-Stack-firmware/blob/master/router/Z-Stack_3.x.0/bin/README.md) for setup instructions.
  
-You can find the coordinator firmware downloads under [`router/Z-Stack_3.x.0/bin`](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/Z-Stack_3.x.0/bin) in the [Z-Stack-firmware repository](https://github.com/Koenkk/Z-Stack-firmware). Pick the latest release available for your stick:
+You can find the coordinator firmware downloads under [`router/Z-Stack_3.x.0/bin`](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/Z-Stack_3.x.0/bin) in the [Z-Stack-firmware repository](https://github.com/Koenkk/Z-Stack-firmware). Pick the latest release available for your stick that matches the following template:
 
 | Stick | Router Firmware |
 |--|--|

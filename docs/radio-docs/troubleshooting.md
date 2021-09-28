@@ -63,6 +63,11 @@ In all of the few reported cases (with zzh), a Raspberry Pi with an external SSD
 Please note that this is not a zzh specific issue, a [quick Google search](https://www.google.com/search?q=raspberry+pi+usb+disconnect+ssd) will lead to many forum threads/blog posts discussing the same issue and recommendations.
 
 
+## Seeing strange behaviour (like delayed messages, communication timeout) on zzh stick?
+
+A recent update to the CH34x Kernel driver has broken serial communication for zzh ([kernel bug report](https://bugzilla.kernel.org/show_bug.cgi?id=214131), [zigbee2mqtt issue discussion](https://github.com/Koenkk/zigbee2mqtt/issues/8663)). This is not a hardware issue and merely updating your kernel version (or downgrading, if a newer version is not available) will get your stick working again.
+
+
 ## Can I use Zigbee and Bluetooth on zzh at the same time?
 
 While the chip used on zzh is a multiprotocol device (CC2652R), the standard ZNP coordinator firmware only makes use of Zigbee. We are not aware of any firmware development that utilises both Zigbee and Bluetooth. If you're interested in developing Bluetooth applications with zzh you might find the [official SDK from TI](https://www.ti.com/tool/SIMPLELINK-CC13X2-26X2-SDK) helpful.

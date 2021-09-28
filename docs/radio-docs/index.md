@@ -53,6 +53,7 @@ With the firmware of your choice downloaded and unzipped, you should end up with
   - The beginner friendly, Windows-only option: [Flash firmware using TI's Flash Programmer 2](/radio-docs/flash-ti-flash-prog/)
   - If you're comfortable running Python scripts, cross-platform option: [Flash firmware using cc2538-bsl](/radio-docs/flash-cc-bsl/)
 
+<p class="info">ℹ️ Please note that if you are a zigpy/ZHA user, you might want to take a backup of your NVRAM data before updating your stick. Information on this can be found on the [zigpy-znp documentation](https://github.com/zigpy/zigpy-znp/blob/dev/TOOLS.md#backup-and-restore).</p>
 
 ## Step 4: Setup zigbee2mqtt or ZHA
 

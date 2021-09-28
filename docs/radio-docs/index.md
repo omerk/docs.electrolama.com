@@ -30,8 +30,8 @@ You can find the coordinator firmware downloads under [`coordinator/Z-Stack_3.x.
 
 | Stick | Coordinator Firmware |
 |--|--|
-| zzh | CC2652R_coordinator_YYYYMMDD |
-| zzhp, zzhp-lite and zoe2 | CC1352P2_CC2652P_other_coordinator_YYYYMMDD |
+| zzh | CC2652R_coordinator_(YYYYMMDD) |
+| zzhp, zzhp-lite and zoe2 | CC1352P2_CC2652P_other_coordinator_(YYYYMMDD) |
 
 
 **Router:** If you're looking to extend the range of your network, flash your stick with the router firmware and plug it into a power source somewhere central in your home for stand-alone operation. Refer to the [README of the router firmware](https://github.com/Koenkk/Z-Stack-firmware/blob/master/router/Z-Stack_3.x.0/bin/README.md) for setup instructions.
@@ -40,10 +40,8 @@ You can find the coordinator firmware downloads under [`router/Z-Stack_3.x.0/bin
 
 | Stick | Router Firmware |
 |--|--|
-| zzh | CC2652R_router_YYYYMMDD |
-| zzhp, zzhp-lite and zoe2 | CC1352P2_CC2652P_other_router_YYMMDD |
-
-<p class="warn">⚠️ <b>WARNING:</b> It is crucial that you download the correct firmware for your stick as using the wrong firmware will disable the BSL and you will need an external debugger / programmer to flash your stick again. Instructions for that can be found <a href="/radio-docs/advanced/flash-jtag/">here</a>.</p>
+| zzh | CC2652R_router_(YYYYMMDD) |
+| zzhp, zzhp-lite and zoe2 | CC1352P2_CC2652P_other_router_(YYYYMMDD) |
 
 
 ## Step 3: Flash the firmware on your stick

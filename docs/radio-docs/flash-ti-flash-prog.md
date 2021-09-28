@@ -51,7 +51,7 @@ With the correct serial port chosen and target device selected, click "Browse" a
 
 <p class="warn">⚠️ <b>WARNING:</b> It is crucial that you download the correct firmware for your stick as using the wrong firmware will disable the BSL and you will need an external debugger / programmer to flash your stick again. Instructions for that can be found <a href="/radio-docs/advanced/flash-jtag/">here</a>.</p>
 
-<p class="info">ℹ️ Please note that if you are a zigpy/ZHA user, you might want to take a backup of your NVRAM data before updating your stick. Information on this can be found on the [zigpy-znp documentation](https://github.com/zigpy/zigpy-znp/blob/dev/TOOLS.md#backup-and-restore).</p>
+<p class="info">ℹ️ Please note that if you are a zigpy/ZHA user, you might want to take a backup of your NVRAM data before updating your stick. Information on this can be found on the <a href="https://github.com/zigpy/zigpy-znp/blob/dev/TOOLS.md#backup-and-restore">zigpy-znp documentation</a>.</p>
 
 With the correct firmware chosen, make sure that "Erase", "Program" and "Verify" are all chosen under "Actions" and press the blue button to start flashing:
 

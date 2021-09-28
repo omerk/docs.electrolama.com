@@ -24,19 +24,26 @@ Good news: As long as you use the correct firmware for your stick, you do not ne
 
 There are two ways you can use your radio stick, either as a **coordinator** or a **router**.
 
-**Coordinator:** This is the firmware you need if you're going to be using your stick with zigbee2mqtt, ZHA (Home Assistant) or any other ZNP-firmware-compliant software.
+**Coordinator:** This is the firmware you need if you're going to be using your stick with zigbee2mqtt, ZHA (Home Assistant) or any other ZNP-firmware-compliant software.  
 
-| Stick | Coordinator Firmware [(repo link)](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin)                          |
-|-----------|-------------------------------------|
-| zzh       | [CC2652R_coordinator_20210120](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_3.x.0/bin/CC2652R_coordinator_20210120.zip) |
-| zzhp, zzhp-lite and zoe2 | [CC1352P2_CC2652P_other_coordinator_20210120](https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_3.x.0/bin/CC1352P2_CC2652P_other_coordinator_20210120.zip) |
+You can find the coordinator firmware downloads under [`coordinator/Z-Stack_3.x.0/bin`](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator/Z-Stack_3.x.0/bin) in the [Z-Stack-firmware repository](https://github.com/Koenkk/Z-Stack-firmware). Pick the latest release available for your stick:
+
+| Stick | Coordinator Firmware |
+|--|--|
+| zzh | CC2652R_coordinator_YYYYMMDD |
+| zzhp, zzhp-lite and zoe2 | CC1352P2_CC2652P_other_coordinator_YYYYMMDD |
+
 
 **Router:** If you're looking to extend the range of your network, flash your stick with the router firmware and plug it into a power source somewhere central in your home for stand-alone operation. Refer to the [README of the router firmware](https://github.com/Koenkk/Z-Stack-firmware/blob/master/router/Z-Stack_3.x.0/bin/README.md) for setup instructions.
+ 
+You can find the coordinator firmware downloads under [`router/Z-Stack_3.x.0/bin`](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/Z-Stack_3.x.0/bin) in the [Z-Stack-firmware repository](https://github.com/Koenkk/Z-Stack-firmware). Pick the latest release available for your stick:
 
-| Stick | Router Firmware [(repo link)](https://github.com/Koenkk/Z-Stack-firmware/tree/master/router/Z-Stack_3.x.0/bin) |
-|-----------|-------------------------------------|
-| zzh       | [CC2652R_router_20210128](https://github.com/Koenkk/Z-Stack-firmware/raw/master/router/Z-Stack_3.x.0/bin/CC2652R_router_20210128.zip)                |
-| zzhp, zzhp-lite and zoe2 | [CC1352P2_CC2652P_other_router_20210128](https://github.com/Koenkk/Z-Stack-firmware/raw/master/router/Z-Stack_3.x.0/bin/CC1352P2_CC2652P_other_router_20210128.zip) |
+| Stick | Router Firmware |
+|--|--|
+| zzh | CC2652R_router_YYYYMMDD |
+| zzhp, zzhp-lite and zoe2 | CC1352P2_CC2652P_other_router_YYMMDD |
+
+<p class="warn">⚠️ <b>WARNING:</b> It is crucial that you download the correct firmware for your stick as using the wrong firmware will disable the BSL and you will need an external debugger / programmer to flash your stick again. Instructions for that can be found <a href="/radio-docs/advanced/flash-jtag/">here</a>.</p>
 
 
 ## Step 3: Flash the firmware on your stick

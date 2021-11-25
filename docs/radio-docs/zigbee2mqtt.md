@@ -10,7 +10,7 @@ With the correct serial port in use identified, edit your Zigbee2mqtt `configura
 
 ```yaml
 serial:
-  port: /dev/ttyUSB0  (change this if it is different on your machine)
+  port: /dev/ttyUSB0  #(change this if it is different on your machine)
 advanced:
   rtscts: false
 ```

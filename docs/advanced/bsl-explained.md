@@ -8,7 +8,7 @@ The BSL "backdoor" is very simple mechanism: If the chip is blank or if the back
 
 A summary of when the bootloader is invoked can be seen in this flowchart below:
 
-![bsl flowchart](/_assets/bsl-flowchart.png)
+![bsl flowchart](/_assets/bsl_flowchart.png)
 
 Refer to the ["CC2538/CC26x0/CC26x2 Serial Bootloader Interface"](http://www.ti.com/lit/an/swra466c/swra466c.pdf) as reference.
 

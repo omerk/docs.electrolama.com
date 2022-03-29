@@ -4,17 +4,17 @@ title: Troubleshooting and FAQ
 
 ## I don't know where to start
 
-The [Quick Start](/radio-docs/) should give you a step by step overview of what is required to set up your stick with the common Home Automation use case.
+The [Quick Start](/) should give you a step by step overview of what is required to set up your stick with the common Home Automation use case.
 
 
 ## The LED on my stick is blinking continously
 
-Each stick is shipped with a test firmware that blinks the on-board LED, on and off continously. This is a "sanity check", to show that the device has survived its journey to you but it does not mean that it is ready for use. You will need to flash the correct firmware before your stick can be used, please refer to the [Quick Start guide](/radio-docs/).
+Each stick is shipped with a test firmware that blinks the on-board LED, on and off continously. This is a "sanity check", to show that the device has survived its journey to you but it does not mean that it is ready for use. You will need to flash the correct firmware before your stick can be used, please refer to the [Quick Start guide](/).
 
 
 ## How can I check if I've flashed the firmware correctly?
 
-To check if the [coordinator firmware](/radio-docs/#step-2-download-the-correct-firmware-for-your-stick) is working correctly on your stick, grab a copy of the [znp-uart-test.py Python script](https://gist.github.com/omerk/0ee0e447a9e36786b4ff71d8f8126a23) and run it, changing the serial port to match yours.
+To check if the [coordinator firmware](/firmware) is working correctly on your stick, grab a copy of the [znp-uart-test.py Python script](https://gist.github.com/omerk/0ee0e447a9e36786b4ff71d8f8126a23) and run it, changing the serial port to match yours.
 
 If you get the `ModuleNotFoundError: No module named 'serial'` error message, install pyserial: `sudo pip3 install pyserial`
 
@@ -79,9 +79,9 @@ While the chip used on zzh is a multiprotocol device (CC2652R), the standard ZNP
 
 TI does provide a packet sniffer that works with Wireshark for multiple protocols, you can download it [here](https://www.ti.com/tool/download/PACKET-SNIFFER-2). Setup and usage instructions available [here](http://software-dl.ti.com/lprf/packet_sniffer_2/docs/user_guide/html/introduction.html).
 
-Once installed, firmware for CC2652R (the chip used on zzh) is located at: `C:\Program Files (x86)\Texas Instruments\SmartRF Tools\SmartRF Packet Sniffer 2\sniffer_fw\bin\cc26x2r1lp\sniffer_fw.hex`. You can flash this firmware using either the [BSL method](/radio-docs/flash-cc-bsl/) or with an [external debugger](/radio-docs/advanced/flash-jtag/).
+Once installed, firmware for CC2652R (the chip used on zzh) is located at: `C:\Program Files (x86)\Texas Instruments\SmartRF Tools\SmartRF Packet Sniffer 2\sniffer_fw\bin\cc26x2r1lp\sniffer_fw.hex`. You can flash this firmware using either the [BSL method](/flash/flash-cc-bsl/) or with an [external debugger](/advanced/flash-jtag/).
 
-<p class="warn">⚠️ <b>WARNING:</b> Using this sniffer firmware effectively <b>disables BSL</b> by moving the backdoor trigger pin (<a href="/radio-docs/bsl/#backdoor">explanation here</a>) and if you burn it <b>you will need an external debugger to re-program your stick</b> (instructions <a href="/radio-docs/advanced/flash-jtag">here</a>).</p>
+<p class="warn">⚠️ <b>WARNING:</b> Using this sniffer firmware effectively <b>disables BSL</b> by moving the backdoor trigger pin (<a href="/bsl/#backdoor">explanation here</a>) and if you burn it <b>you will need an external debugger to re-program your stick</b> (instructions <a href="/advanced/flash-jtag">here</a>).</p>
 
 
 ## I can get everything but "Device X" working, how do I fix that?
@@ -102,7 +102,7 @@ Having said all that, [reviews from existing customers](https://www.tindie.com/p
 
 **"ERROR: Timeout waiting for ACK / NACK after ‘Synch (0x55 0x55)’**
 
-This error is almost always seen when the device is not put into BSL mode correctly. Please follow the [instructions here](/radio-docs/bsl/#how-to-enter-bsl-mode) and try again.
+This error is almost always seen when the device is not put into BSL mode correctly. Please follow the [instructions here](/bsl/#how-to-enter-bsl-mode) and try again.
 
 
 
@@ -119,7 +119,7 @@ This is a general error if there is a communication problems with the adapter us
 A checklist to go through if you get this error message:
 
   * Make sure you have the correct serial port and `rtscts: false` option set in your `configuration.yaml`
-  * Make sure you have the correct firmware burned on your adapter. **Remember, Electrolama boards do not ship with RF firmware** so you will need to burn the appropriate firmware before using it with any application (see [here](/radio-docs/#step-2-download-the-correct-firmware-for-your-stick)).
+  * Make sure you have the correct firmware burned on your adapter. **Remember, Electrolama boards do not ship with RF firmware** so you will need to burn the appropriate firmware before using it with any application (see [here](/firmware)).
   * Are you using any virtualisation/container pass-through for the USB device? There have been reports of these potentially causing problems so for debugging purposes try communicating with the adapter directly from the host OS it is connected to (i.e: see if it works without the bypass)
   * Make sure that there aren't any concurrent serial port access issues (i.e: multiple pieces of software all trying to communicate with the same serial port at the same time)
   * Make sure you are using an up-to-date version of Zigbee2mqtt on the host and firmware on the adapter.

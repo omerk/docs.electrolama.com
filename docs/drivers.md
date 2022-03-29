@@ -59,4 +59,4 @@ The drivers for the CH340 chip appear to be missing on some (all?) Synology NAS 
 
 ## zoe and zoe2
 
-Both zoe and zoe2 are connected to the UART pins on the Raspberry Pi directly and do not require any drivers. You will need to disable the console to reclaim the UART lines though, follow instructions [here](XXX).
+Both zoe and zoe2 are connected to the UART pins on the Raspberry Pi directly and do not require any drivers. You will need to disable the console to reclaim the UART lines though, follow instructions [here](/guides/rpi-setup/#console-uart).

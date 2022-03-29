@@ -31,7 +31,7 @@ We need to identify what serial port to use, right click on the Start menu and g
 
 ![Serial Ports in Windows Device Manager](/_assets/zzh-port-windows.png)
 
-If you don't see your stick under "Ports (COM & LPT)" with a COM Port assigned, you may need to install the drivers for it (see [here](/radio-docs/drivers/)).
+If you don't see your stick under "Ports (COM & LPT)" with a COM Port assigned, you may need to install the drivers for it (see [here](/drivers/)).
 
 With the COM Port identified in "Device Manager", switch over to SmartRF Flash Programmer v2 and click on "Unknown" displayed under the serial port you've identified:
 
@@ -47,9 +47,9 @@ Next up: We need to tell SmartRF Flash Programmer v2 what target device we have 
 
 ## Select firmware file and flash device
 
-With the correct serial port chosen and target device selected, click "Browse" and select the firmware you want to flash (see [here](/radio-docs/#step-2-download-the-correct-firmware-for-your-stick) for help on choosing firmware).
+With the correct serial port chosen and target device selected, click "Browse" and select the firmware you want to flash (see [here](/firmware) for help on choosing firmware).
 
-<p class="warn">⚠️ <b>WARNING:</b> It is crucial that you download the correct firmware for your stick as using the wrong firmware will disable the BSL and you will need an external debugger / programmer to flash your stick again. Instructions for that can be found <a href="/radio-docs/advanced/flash-jtag/">here</a>.</p>
+<p class="warn">⚠️ <b>WARNING:</b> It is crucial that you download the correct firmware for your stick as using the wrong firmware will disable the BSL and you will need an external debugger / programmer to flash your stick again. Instructions for that can be found <a href="/advanced/flash-jtag/">here</a>.</p>
 
 <p class="info">ℹ️ Please note that if you are a zigpy/ZHA user, you might want to take a backup of your NVRAM data before updating your stick. Information on this can be found on the <a href="https://github.com/zigpy/zigpy-znp/blob/dev/TOOLS.md#backup-and-restore">zigpy-znp documentation</a>.</p>
 
@@ -61,7 +61,7 @@ If all goes to plan, after a few seconds you should see a green bar confirming t
 
 ![Successful flashing using Flash Programmer 2](/_assets/flash-prog-ok.png)
 
-You can now proceed to configuring your software of choice (see [here](/radio-docs/#step-4-setup-zigbee2mqtt-or-zha)).
+You can now proceed to configuring your software of choice.
 
 
 ## Troubleshooting

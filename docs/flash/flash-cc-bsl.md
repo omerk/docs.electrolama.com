@@ -85,9 +85,9 @@ To flash firmware, run:
 
 `python3 cc2538-bsl.py -p PORT -evw FIRMWARE`
 
-...where `PORT` is the serial port your board is connected to (see [above](#determine-the-usb-port)) and `FIRMWARE` is the hex file you want to flash (see [here](/radio-docs/#step-2-download-the-correct-firmware-for-your-stick) for help on choosing firmware).
+...where `PORT` is the serial port your board is connected to (see [above](#determine-the-usb-port)) and `FIRMWARE` is the hex file you want to flash (see [here](/firmware) for help on choosing firmware).
 
-<p class="warn">⚠️ <b>WARNING:</b> It is crucial that you download the correct firmware for your stick as using the wrong firmware will disable the BSL and you will need an external debugger / programmer to flash your stick again. Instructions for that can be found <a href="/radio-docs/advanced/flash-jtag/">here</a>.</p>
+<p class="warn">⚠️ <b>WARNING:</b> It is crucial that you download the correct firmware for your stick as using the wrong firmware will disable the BSL and you will need an external debugger / programmer to flash your stick again. Instructions for that can be found <a href="/advanced/flash-jtag/">here</a>.</p>
 
 <p class="info">ℹ️ Please note that if you are a zigpy/ZHA user, you might want to take a backup of your NVRAM data before updating your stick. Information on this can be found on the <a href="https://github.com/zigpy/zigpy-znp/blob/dev/TOOLS.md#backup-and-restore">zigpy-znp documentation</a>.</p>
 
@@ -101,4 +101,4 @@ To completely erase the device flash, run:
 
 
 ## Auto-BSL
-cc2538-bsl.py supports "Auto-BSL" (details [here](/radio-docs/bsl/#auto-bsl)) on zzhp and zzhp-lite, so you can skip the BSL pushbutton press for flashing these boards. <ins>zzh and zoe2 does not support Auto-BSL!</ins>
+cc2538-bsl.py supports "Auto-BSL" (details [here](/bsl/#auto-bsl)) on zzhp and zzhp-lite, so you can skip the BSL pushbutton press for flashing these boards. <ins>zzh and zoe2 does not support Auto-BSL!</ins>

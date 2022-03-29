@@ -19,7 +19,7 @@ The de facto (see [here](https://github.com/Koenkk/Z-Stack-firmware/issues/210))
 
 All Electrolama boards have a pushbutton on these pins, labelled "BSL".
 
-<ins>If you flash a firmware on your stick that moves this backdoor pin, this will effectively disable BSL and you will need an <a href="/radio-docs/advanced/flash-jtag">external debugger</a> to flash your stick again.</ins>
+<ins>If you flash a firmware on your stick that moves this backdoor pin, this will effectively disable BSL and you will need an <a href="/advanced/flash-jtag">external debugger</a> to flash your stick again.</ins>
 
 
 ## Auto-BSL
@@ -41,4 +41,4 @@ If you're building firmware yourself and would like to keep BSL working on Elect
   - **Bootloader Backdoor DIO:** 13 (for zzh only) or 15 (for zzhp/zzhp-lite/zoe2)
   - **Trigger level of Bootloader Backdoor:** Active Low
 
-If the settings are different, then you won't be able to use the BSL pushbutton on your board to enter the BSL mode and will need a debugger to flash your boards (details [here](/radio-docs/advanced/flash-jtag/)).
+If the settings are different, then you won't be able to use the BSL pushbutton on your board to enter the BSL mode and will need a debugger to flash your boards (details [here](/advanced/flash-jtag/)).

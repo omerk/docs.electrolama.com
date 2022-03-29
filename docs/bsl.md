@@ -6,7 +6,7 @@ title: Enter "BSL" Mode
 
 One of the nice things about the new chips from TI is the inclusion of a serial bootloader in the ROM. Enabled by default and available unless explicitly modified by the application, you can flash code without needing an external debugger/programmer.
 
-<p class="warn">⚠️ <b>WARNING:</b> Given that the bootloader is configurable, it is crucial that you download the correct firmware for your stick as using the wrong firmware will disable the BSL and you will need an external debugger/programmer to flash your stick again. Instructions for that can be found <a href="/radio-docs/advanced/flash-jtag/">here</a>.</p>
+<p class="warn">⚠️ <b>WARNING:</b> Given that the bootloader is configurable, it is crucial that you download the correct firmware for your stick as using the wrong firmware will disable the BSL and you will need an external debugger/programmer to flash your stick again. Instructions for that can be found <a href="/advanced/flash-jtag/">here</a>.</p>
 
 
 ## How to enter BSL mode

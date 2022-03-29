@@ -2,12 +2,12 @@
 title: Flash Firmware using c/JTAG
 ---
 
-**Please Note**: <ins>For general purpose usage, you will not need an external debugger and [BSL method](/radio-docs/flash-ti-flash-prog/) will be enough for your flashing needs</ins>. If you have accidentally disabled BSL on your stick by flashing it with an incompatible firmware, or if you are a firmware developer needing proper debugging facilities and/or want to get access to the RF tools in TI SmartRF Studio, follow along.
+**Please Note**: <ins>For general purpose usage, you will not need an external debugger and [BSL method](/flash/flash-ti-flash-prog/) will be enough for your flashing needs</ins>. If you have accidentally disabled BSL on your stick by flashing it with an incompatible firmware, or if you are a firmware developer needing proper debugging facilities and/or want to get access to the RF tools in TI SmartRF Studio, follow along.
 
 
 ## cJTAG vs JTAG
 
-TI's [newer generation chips](/radio-docs/advanced/ti-part-numbers/) use cJTAG as the default debug interface. While it may look like it (reduced pin count on the debug header), **cJTAG is not SWD**. cJTAG (IEEE 1149.7) is an extension to the JTAG standard (IEEE 1149.1), that reduces the number of required pins by multiplexing the TMS, TDI and TDO signals on a single bi-directional pin, providing all the normal JTAG debug and test functionality ([ref](https://www.segger.com/products/debug-probes/j-link/technology/interface-description/#cjtag-compatibility)).
+TI's [newer generation chips](/guides/ti-part-numbers/) use cJTAG as the default debug interface. While it may look like it (reduced pin count on the debug header), **cJTAG is not SWD**. cJTAG (IEEE 1149.7) is an extension to the JTAG standard (IEEE 1149.1), that reduces the number of required pins by multiplexing the TMS, TDI and TDO signals on a single bi-directional pin, providing all the normal JTAG debug and test functionality ([ref](https://www.segger.com/products/debug-probes/j-link/technology/interface-description/#cjtag-compatibility)).
 
 The debug header on zzh only exposes TMS/TCK and as such a cJTAG compatible debug adapter is needed. On zzhp and zzhp-lite (Rev B3 onwards), all pins are brought out to the debug header so you can use a JTAG compatible debug adapter.
 

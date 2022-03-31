@@ -18,12 +18,7 @@ We assume that you have an up and running Domoticz installation, but for more in
 
 Then you can plug your zzh key, and that should be recognised by the operating system.
 
-Finaly follow the Z4D:
-
-1. [Plugin Installation](https://zigbeefordomoticz.github.io/wiki/en-eng/Plugin_Installation),
-1. [Plugin Settings](https://zigbeefordomoticz.github.io/wiki/en-eng/Plugin_Settings.html),
-1. [Plugin Configuration](https://zigbeefordomoticz.github.io/wiki/en-eng/Plugin_Configuration.html)
-1. [Final Integration](https://zigbeefordomoticz.github.io/wiki/en-eng/Plugin_Integration.html)
+Finaly follow the Z4D [Installation Steps](<https://zigbeefordomoticz.github.io/wiki/en-eng/#installation>
 
 ## Troubleshooting
 

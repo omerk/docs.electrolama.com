@@ -12,8 +12,6 @@ Z2D depends on the [zigpy python library (plus radio libraries for zigpy)](https
 
 Z2D comes with a set of documention for [English](https://zigbeefordomoticz.github.io/wiki/en-eng) and [French](https://zigbeefordomoticz.github.io/wiki/fr-fr) speakers/readers
 
-In addition you can also rely on the Domoticz community though the [English forum](https://www.domoticz.com/forum/viewforum.php?f=68) or the [French forum](https://easydomoticz.com/forum/viewforum.php?f=28)
-
 ## Configuration
 
 We assume that you have an up and running Domoticz installation, but for more information you can go to [Domoticz Wiki](https://www.domoticz.com/wiki/Main_Page) for more information. Make sure that you have Domoticz with Python3 ( cross-check [Using Python Plugins](https://www.domoticz.com/wiki/Using_Python_plugins) )
@@ -26,3 +24,7 @@ Finaly follow the Z2D:
 1. [Plugin Settings](https://zigbeefordomoticz.github.io/wiki/en-eng/Plugin_Settings.html),
 1. [Plugin Configuration](https://zigbeefordomoticz.github.io/wiki/en-eng/Plugin_Configuration.html)
 1. [Final Integration](https://zigbeefordomoticz.github.io/wiki/en-eng/Plugin_Integration.html)
+
+## Troubleshooting
+
+You can rely on the Domoticz community though the [English forum](https://www.domoticz.com/forum/viewforum.php?f=68) or the [French forum](https://easydomoticz.com/forum/viewforum.php?f=28)

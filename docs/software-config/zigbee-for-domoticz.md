@@ -4,7 +4,7 @@ title: Zigbee for Domoticz (Z2D)
 
 # Zigbee for Domoticz
 
-[Zigbee for Domoticz](https://github.com/zigbeefordomoticz/Domoticz-Zigbee.git) integration is a python3 plugin for [Domoticz](https://www.domoticz.com/) for a full support without any middle applications or brokers. It comes with a uniq User Interface to monitor and administrate the plugin and will allow you to use any electrolama coordinator like the zzh adapter.
+[Zigbee for Domoticz](https://github.com/zigbeefordomoticz/Domoticz-Zigbee.git) integration is a python3 plugin for [Domoticz](https://www.domoticz.com/) providing a full support without any middle applications or brokers. It comes with a uniq User Interface to monitor and administrate the plugin and will allow you to use any electrolama coordinator like the zzh adapter.
 
 Z2D depends on the [zigpy python library (plus radio libraries for zigpy)](https://github.com/zigpy/) to support different Zigbee adapters/modules, and the radio library for TI CC chips supports the [same Z-Stack coordinator firmware as Zigbee2mqtt](https://github.com/Koenkk/Z-Stack-firmware/tree/master/coordinator).
 
@@ -16,7 +16,7 @@ In addition you can also rely on the Domoticz community though the [English foru
 
 ## Configuration
 
-We assume that you have an up and running Domoticz installation, but for more information you can go to [Domoticz Wiki](https://www.domoticz.com/wiki/Main_Page) for more information. Make sure that you have Domoticz with Python3 ( cross-check [Using Python Plugins](https://www.domoticz.com/wiki/Using_Python_plugins)
+We assume that you have an up and running Domoticz installation, but for more information you can go to [Domoticz Wiki](https://www.domoticz.com/wiki/Main_Page) for more information. Make sure that you have Domoticz with Python3 ( cross-check [Using Python Plugins](https://www.domoticz.com/wiki/Using_Python_plugins) )
 
 Then you can plug your zzh key, and that should be recognised by the operating system.
 

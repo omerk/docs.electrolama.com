@@ -10,7 +10,7 @@ A summary of when the bootloader is invoked can be seen in this flowchart below:
 
 ![bsl flowchart](/_assets/bsl_flowchart.png)
 
-Refer to the ["CC2538/CC26x0/CC26x2 Serial Bootloader Interface"](http://www.ti.com/lit/an/swra466c/swra466c.pdf) as reference.
+Refer to the ["CC2538/CC26x0/CC26x2 Serial Bootloader Interface"](http://www.ti.com/lit/an/swra466d/swra466d.pdf) as reference.
 
 The de facto (see [here](https://github.com/Koenkk/Z-Stack-firmware/issues/210)) backdoor enable level is `LOW` and pins defined are:
 

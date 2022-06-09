@@ -64,6 +64,10 @@ const sidebars = {
           type: 'doc',
           id: 'software-config/zha-home-assistant',
         },
+        {
+          type: 'doc',
+          id: 'software-config/zigbee-for-domoticz',
+        },
       ],
     },
 

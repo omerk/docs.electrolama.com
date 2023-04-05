@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Electrolama Docs',
+  title: 'Electrolama Support',
   tagline: '',
-  url: 'https://docs.electrolama.com',
+  url: 'https://support.electrolama.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'electrolama',
-  projectName: 'docs.electrolama.com',
+  projectName: 'support.electrolama.com',
   presets: [
     [
       'classic',
